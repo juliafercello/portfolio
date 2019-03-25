@@ -9,10 +9,8 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,23 +19,49 @@
 <body>
     <!--Navbar-->
     <!-- <nav class="nav-extended"> -->
-    <nav class="nav-extended deep-purple lighten-2 container">
+    <nav class="nav-extended indigo lighten-1 container">
         <div class="nav-wrapper">
-            <h1 class="left" style="font-family: 'Ruluko', sans-serif; margin: 0">Julia Fercello</h1>
-            <ul class="right">
-                <li><a> <i class="fa fa-github-square fa-4x" aria-hidden="true"></i> </a></li>
-                <li><a> <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i> </a></li>
-            </ul>
+            <h1 class="left">Julia Fercello</h1>
+            <!-- <ul class="right">
+                <li><a> <i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a></li>
+                <li><a> <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a></li>
+            </ul> -->
+            <div class="right" id="iconDiv">
+                <a href="https://github.com/juliafercello" target="_blank"><i class="fa fa-github-square fa-3x"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/julia-fercello-82303610/" target="_blank"> <i
+                        class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+            </div>
         </div>
         <div class="nav-content">
             <!-- <div class="nav-text">Fullstack Web Developer</div> -->
         </div>
     </nav>
 
-    <h1>Hello world</h1>
+    <!--Carousel for Project Work -->
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title indigo-text">Portfolio</span>
+                        <p> something </p>
+                        <div class="carousel">
+                            <a class="carousel-item" href="#one!"><img src="assets/images/giftastic2.png"></a>
+                            <a class="carousel-item" href="#two!"><img src="assets/images/RPS.png"></a>
+                            <a class="carousel-item" href="#three!"><img src="assets/images/TriviaGame.png"></a>
+                            <a class="carousel-item" href="#four!"><img src="assets/images/crystalCollector.png"></a>
+                            <a class="carousel-item" href="#five!"><img src="assets/images/getReadyGo2.png"></a>
+                            <a class="carousel-item" href="#five!"><img src="assets/images/hangman.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--Footer-->
-    <footer class="page-footer deep-purple lighten-2 container">
+    <footer class="page-footer indigo lighten-1 container">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -46,25 +70,23 @@
                         content.</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
+                    <h5 class="white-text">Contact Info</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                        <li class="valign-wrapper"> <i class="material-icons">email</i>juliafercello@gmail.com</li>
+                        <li class="valign-wrapper"> <i class="material-icons">local_phone</i> 651-592-1482 </li>
+                        <li class="valign-wrapper"> <i class="material-icons">home</i> St. Paul, MN </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-        </div>
     </footer>
     <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
+
 </body>
 
 </html>
