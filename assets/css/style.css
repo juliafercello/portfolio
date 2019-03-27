@@ -7,21 +7,11 @@ i, .btn-flat {
     margin: 5px
 }
 
-/* li {
-    color: #c51162; 
-} */
-
-/* active */
-
-/* #cat {
-    height: 100%; 
-    width: 100%;
-} */
-
-.carousel-item {
-    padding-left: 10px; 
-}
-
 img {
     padding: 10px; 
+}
+
+.samesize {
+    min-height: 454px;
+    max-height: 454px
 }
