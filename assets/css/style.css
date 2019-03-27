@@ -1,16 +1,27 @@
-h1 {
-    font-family: 'Ruluko', sans-serif; 
-    margin: 0 0 0 4px
-}
-
 #iconDiv {
      margin: 0 4px 0 0
 }
 
-i {
+i, .btn-flat {
+    color: white; 
     margin: 5px
 }
 
-.carousel .carousel-item {
-    width: 300px !important;
+/* li {
+    color: #c51162; 
+} */
+
+/* active */
+
+/* #cat {
+    height: 100%; 
+    width: 100%;
+} */
+
+.carousel-item {
+    padding-left: 10px; 
+}
+
+img {
+    padding: 10px; 
 }
