@@ -30,10 +30,10 @@
     <div class="container">
         <div class="card">
             <div class="card-content">
-                <span class="card-title pink-text text-accent-4">Portfolio</span>
-                <ul id="portfolio-tabs" class="tabs">
-                    <li class="tab col s3"><a href="#tab-1">Awesome</a></li>
-                    <li class="tab col s3"><a href="#tab-2">More Awesome</a></li>
+                <span class="card-title pink-text text-accent-4 left">Portfolio</span>
+                <ul id="portfolio-tabs left" class="tabs">
+                    <li class="tab col s3 right" id="previousTab"><a href="#tab-1">Previous</a></li>
+                    <li class="tab col s3 right" id="nextTab"><a href="#tab-2">Next</a></li>
                 </ul>
 
                 <!--TAB 1-->
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                     </div>
-                    <a class="waves-effect waves-light btn pink accent-4 right" href="#tab-2">Next</a>
+                    <!-- <a class="waves-effect waves-light btn pink accent-4 right" href="#tab-2">Next</a> -->
 
                 </div>
 
@@ -165,7 +165,7 @@
                             </div>
                         </div>
                     </div>
-                    <a class="waves-effect waves-light btn pink accent-4 right" href="#tab-1">Previous</a>
+                    <!-- <a class="waves-effect waves-light btn pink accent-4 right" href="#tab-1">Previous</a> -->
                 </div>
             </div>
         </div>
@@ -207,15 +207,31 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.tabs').tabs({ swipeable: true, onShow: resizeTab });
 
+
+        $(document).ready(function (event) {
+            $('.tabs').tabs({ swipeable: true, onShow: resizeTab });
             $(window).resize(function () { resizeTab(); });
+
+            if ($("#tab-1").show()) {
+                $("#nextTab").show();
+                $("#previousTab").hide();
+            }
+
         });
 
         function resizeTab() {
             $(".tabs-content").css('height', $('.carousel-item.active').height() + 'px');
         }
+
+        $("#nextTab").click(function () {
+            $("#previousTab").show();
+            $("#nextTab").hide();
+        });
+        $("#previousTab").click(function () {
+            $("#previousTab").hide();
+            $("#nextTab").show();
+        });
     </script>
 </body>
 
