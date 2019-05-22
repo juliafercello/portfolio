@@ -15,3 +15,11 @@ img {
     min-height: 454px;
     max-height: 454px
 }
+
+.tabs-content.carousel .carousel-item { 
+    height:auto; 
+}
+
+.tabs {
+    display: none;
+}
